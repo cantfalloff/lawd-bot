@@ -1,0 +1,16 @@
+[project]
+name = "thatrack-bot"
+version = "1.0.0"
+description = "a telegram bot for thatrack"
+authors = [
+    {name = "thediogen",email = "evgendvodnenko@gmail.com"}
+]
+readme = "README.md"
+requires-python = "^3.10"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
