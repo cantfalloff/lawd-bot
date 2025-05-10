@@ -5,16 +5,17 @@ from aiogram.types import BotCommand
 from aiogram.fsm.storage.memory import MemoryStorage
 
 from src.config import TELEGRAM_BOT_TOKEN
-from src.bot.routers.signup import signup_r
+from src.bot.middleware.auth import AuthMiddleware
+from src.bot.routers import std_r, signup_r
 
 
 bot = Bot(token=TELEGRAM_BOT_TOKEN)
 dp = Dispatcher(storage=MemoryStorage())
 
 
-dp.include_routers(signup_r)
+dp.include_routers(std_r, signup_r)
 
-# include AuthMiddleware
+std_r.message.middleware(AuthMiddleware())
 
 
 commands = []

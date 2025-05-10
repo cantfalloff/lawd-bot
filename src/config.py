@@ -28,3 +28,8 @@ BASE_API_URL = 'http://127.0.0.1:8000'
 
 TELEGRAM_BOT_TOKEN: str = getenv_('telegram_bot_token')
 API_KEY: str = getenv_('api_key')
+
+# Redis
+REDIS_HOST: str = getenv_('redis_host')
+REDIS_PORT: int = int(getenv_('redis_port'))
+REDIS_DB: int = int(getenv_('redis_db'))
