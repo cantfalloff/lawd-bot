@@ -2,11 +2,6 @@ from aiogram import Router
 from aiogram.filters import Command
 from aiogram.types import Message
 from aiogram.fsm.context import FSMContext
-import httpx
-
-from src.bot.states.auth import AuthStates
-from src.utils.password_manager import password_manager
-from src.config import API_KEY, BASE_API_URL
 
 
 std_r = Router()
