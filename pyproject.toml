@@ -1,9 +1,9 @@
 [project]
-name = "thatrack-bot"
+name = "lawd-bot"
 version = "1.0.0"
-description = "a telegram bot for thatrack"
+description = "a telegram bot for lawd"
 authors = [
-    {name = "thediogen",email = "evgendvodnenko@gmail.com"}
+    {name = "thekovalskii",email = "thekovalskii@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.10,<3.11"
